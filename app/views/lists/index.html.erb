@@ -1,0 +1,21 @@
+<header id="header">
+  <h1>todos</h1>
+  <!-- Make into actual rails form to create a new list -->
+  
+  <%= form_for(@list) do |f| %>
+
+    <%= f.text_field :name, :id => "new-todo", :placeholder => "Make a new list",  :class => "new-todo", :autocomplete => false %> 
+    
+    <%= f.submit "Submit", :style => "display: none" %>
+  <% end %>
+</header>
+
+<section id="main">
+  <ul id="todo-list" class="lists">
+    <%= render @lists %>
+  </ul>
+</section>
+
+<footer id="footer">
+
+</footer>

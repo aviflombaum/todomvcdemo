@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TodomvcAssetPipeline</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <section id="todoapp">
+    <%= yield %>
+  </section>
+
+  <footer id="info">
+    <p>Double-click to edit a todo</p>
+    <p>Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a></p>
+    <p>Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a></p>
+    <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+
+    <a name="footer"></a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+1. an event handler is bound
+
+2. an event occurs, triggering the event handler
+
+3. the event handler fires, generally triggering an ajax request
+
+4. the ajax request fires
+
+5. the server gets the ajax request
+
+
+
+6. the server does its thing and sends back a response
+
+
+7. the ajax event was waiting for a response, when it gets it back it triggers the callback function of what to do with that response
+
+8. the response is sent to the callback and something is done (generally modifying the DOM)
+

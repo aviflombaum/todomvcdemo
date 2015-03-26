@@ -1,0 +1,9 @@
+<li data-id="<%= list.id %>">
+  <div class="view">
+    <label><%= link_to list.name, list_path(list) %></label>
+
+    <%= form_for(list, :method => :delete) do |f| %>
+      <button class="destroy"></button>
+    <% end %>
+  </div>
+</li>

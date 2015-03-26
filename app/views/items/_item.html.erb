@@ -1,0 +1,13 @@
+<li data-item-id="<%= item.id %>">
+  <div class="view">
+    <%= form_for([@list, item]) do |f| %>
+      <%= f.check_box :status, :class => "toggle" %>
+    <% end %>
+
+    <label><%= item.content %></label>
+
+    <%#= form_for(item, :method => :delete) do |f| %>
+      <button class="destroy"></button>
+    <%# end %>
+  </div>
+</li>
